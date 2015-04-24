@@ -1,23 +1,23 @@
 {
-  "name": "angelia_test",
-  "version": "0.0.2",
-  "description": "a test demo",
-  "main": "./angelia.js",
+  "name": "angelia_lesson",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/angeliaz/node_demo.git"
-  },
-  "keywords": [
-    "angelia",
-    "test"
-  ],
   "author": "angelia",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/angeliaz/node_demo/issues"
-  },
-  "homepage": "https://github.com/angeliaz/node_demo"
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "css-select": "^1.1.0",
+    "dom-serializer": "^0.1.0",
+    "eventproxy": "^0.3.2",
+    "express": "^4.12.3",
+    "htmlparser2": "^3.8.2",
+    "lodash": "^3.7.0",
+    "superagent": "^1.2.0",
+    "superagentparse": "^1.0.0",
+    "utility": "^1.3.1"
+  }
 }
