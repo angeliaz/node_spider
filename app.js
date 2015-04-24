@@ -11,6 +11,7 @@ var ep = new eventproxy();
 var app = express();
 var originUrl = 'http://www.qq.com/';
 
+// 抓取网页内容
 superagent
 	.get(originUrl)
     .end(function (err, data) {
@@ -27,7 +28,7 @@ superagent
 	        topicUrls.push(href);
 	    });
 
-
+	    // 异步并发
 	    ep.after('topic_html', topicUrls.length, function(topics) {
 
 			topics = topics.map(function (topicPair) {
@@ -48,6 +49,8 @@ superagent
 
 		topicUrls.forEach(function (topicUrl) {
 			superagent.get(topicUrl)
+				// here is the key, can be also: 
+  				// CP932, CP936, CP949, CP950, GB2313, GBK, GB18030, Big5, Shift_JIS, EUC-JP
 				.parse(parse('gbk'))
 				.end(function (err, res) {
 					console.log('fetch ' + topicUrl + ' successful');
