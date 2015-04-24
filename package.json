@@ -1,0 +1,23 @@
+{
+  "name": "angelia_test",
+  "version": "0.0.2",
+  "description": "a test demo",
+  "main": "./angelia.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angeliaz/node_demo.git"
+  },
+  "keywords": [
+    "angelia",
+    "test"
+  ],
+  "author": "angelia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angeliaz/node_demo/issues"
+  },
+  "homepage": "https://github.com/angeliaz/node_demo"
+}

@@ -1,2 +1,2 @@
-# node_spider
-a simple spider written by node
+# node_demo
+a simple demo to learn node
